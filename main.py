@@ -202,7 +202,5 @@ if file_name:
             elif booking_hash_key not in booking_history:
                 booking_history[str(booking_hash_key)] = trade
 
-json_booking_summary = [summary.__dict__ for summary in booking_summary]
-print(json_booking_summary)
-
-print(booking_history, "booking_history")
+result_booking_summary = [summary.__dict__ for summary in booking_summary]
+print(result_booking_summary)
