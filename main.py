@@ -175,7 +175,7 @@ if file_name:
                             del booking_history[booking_hash_key]
 
                         elif booking_history[booking_hash_key]["quantity"] < 0:
-                            # Previous Sell - Buy Trade has been closed, Creating a new Buy Order
+                            # Previous Sell - Buy Trade has been closed, Creating a new Sell Order
                             booking_history[booking_hash_key][
                                 "side"
                             ] = TradeEnum.SELL.value
